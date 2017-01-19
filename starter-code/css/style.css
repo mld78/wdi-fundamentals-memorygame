@@ -54,3 +54,8 @@ a:hover {
 	height: 0;
 	font-size: 0;
 }
+
+img {
+	height:200px;
+	width: 150px;
+}
