@@ -9,9 +9,10 @@ var cards = ['queen', 'queen', 'king', 'king'];
 
 var cardsInPlay = [];
 
+var gameBoard = document.getElementById('game-board');
 
 	var createBoard = function() {
-		var gameBoard = document.getElementById('game-board');
+		
 		for(i=0; i<cards.length, i++) {
 
 			var newCard = document.createElement('div');
@@ -36,16 +37,14 @@ var isMatch = function() {
 isMatch();
 
 
-
-
-function isTwoCards() {
+var isTwoCards = function() {
 	cardsInPlay.push(this.getAttribute('data-card'));
 
 console.log(this.getAttribute('data-card'))
 	if (this.getAttribute('data-card') === 'king') {
-		this.innerHTML = "<img src='cards-157651_1280.png'>";
+		this.innerHTML = <img src='cards-157651_1280.png'>;
 } else {
-	this.innerHTML = "<img src='cards-157646_1280.png'>";
+	this.innerHTML = <img src='cards-157646_1280.png'>;
 }
 	if (cardsInPlay.length === 2){
 		isMatch(cardsInPlay);
